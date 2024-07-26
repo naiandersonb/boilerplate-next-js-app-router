@@ -12,21 +12,7 @@
     "plugin:jest/recommended"
   ],
   "plugins": ["prettier", "jest"],
-  "overrides": [
-    {
-      "files": ["tests/**/*"],
-      "env": {
-        "jest/globals": true
-      }
-    }
-  ],
   "rules": {
-    "prettier/prettier": [
-      "error",
-      {
-        "endOfLine": "auto"
-      }
-    ],
     "react/react-in-jsx-scope": "off",
     "no-unused-vars": "error"
   }
