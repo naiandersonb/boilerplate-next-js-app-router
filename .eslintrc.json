@@ -7,20 +7,32 @@
     "eslint:recommended",
     "plugin:@next/next/recommended",
     "plugin:prettier/recommended",
-    "next/core-web-vitals"
+    "next/core-web-vitals",
+    "plugin:storybook/recommended"
   ],
-  "plugins": ["prettier"],
+  "plugins": [
+    "prettier"
+  ],
   "overrides": [
     {
-      "files": ["tests/**/*"],
-      "plugins": ["jest"],
+      "files": [
+        "tests/**/*"
+      ],
+      "plugins": [
+        "jest"
+      ],
       "env": {
         "jest/globals": true
       }
     }
   ],
   "rules": {
-    "prettier/prettier": ["error", { "endOfLine": "auto" }],
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
     "react/react-in-jsx-scope": "off",
     "no-unused-vars": "error"
   }
